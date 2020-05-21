@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Asap:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: midnightBlue;
+}
+
+header {
+  background-color: white;
+  padding: 20px;
+}
+
+header > h1 {
+  color: midnightBlue;
+  text-align: center;
+  font-family: Asap, sans-serif;
+}
+
+.score-board {
+  margin: 20px auto;
+  border: 3px solid white;
+  border-radius: 4px;
+  text-align: center;
+  width: 200px;
+  color: white;
+  font-size: 46px;
+  padding: 15px 20px;
+  font-family: Asap, sans-serif;
+  position: relative;
+}
+
+.badge-game {
+  background-color: darkRed;
+  color: white;
+  font-size: 14px;
+  padding: 2px 10px;
+  font-family: Asap, sans-serif;
+}
+
+#user-label {
+  position: absolute;
+  top: 30px;
+  left: -25px;
+}
+
+#computer-label {
+  position: absolute;
+  top: 30px;
+  right: -30px;
+}
+
+.result {
+  font-size: 40px;
+  color: white;
+}
+
+.result > p {
+  text-align: center;
+  font-weight: bold;
+  font-family: Asap, sans-serif;
+}
+
+.choices {
+  margin-top: 20px;
+  text-align: center;
+}
+
+img {
+  height: 100px;
+  width: 100px;
+  border-radius: 50px;
+}
+.choice {
+  border: 4px solid white;
+  border-radius: 50%;
+  display: inline-block;
+  padding: 5px;
+  margin: 0 20px;
+  transition: all 0.3s ease;
+}
+
+.choice:hover {
+  cursor: pointer;
+  background: darkBlue;
+}
+
+#action-message {
+  text-align: center;
+  color: white;
+  font-family: Asap, sans-serif;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+
+.green-glow {
+  border: 4px solid green;
+  box-shadow: 0 0 10px darkGreen;
+}
+
+.red-glow {
+  border: 4px solid red;
+  box-shadow: 0 0 10px darkRed;
+}
+
+.gray-glow {
+  border: 4px solid gray;
+  box-shadow: 0 0 10px darkGray;
+}
+
+.main {
+  background: #ccc;
+  width: 400px;
+  height: 175px;
+  margin: 100px auto;
+  padding: 30px;
+  position: relative;
+}
+
+.badge {
+  width: 90px;
+  background-color: #e66357;
+  color: white;
+  padding: 5px 10px;
+  font-family: sans-serif;
+  font-weight: bold;
+  position: absolute;
+  top: -15px;
+  left: 40%;
+}
+
+.clock {
+  background-color: #EBEBEB;
+  text-align: center;
+  font-size: 55px;
+  height: 100%;
+  padding-top: 20px;
+  font-family: Orbitron;
+  border-radius: 4px;
+}
